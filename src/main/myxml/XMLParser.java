@@ -1,28 +1,37 @@
 package src.main.myxml;
 
+import java.io.File;
+import java.util.List;
+
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.parsers.DocumentBuilder;
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+
 public class XMLParser {
-
-    /**
-     * Parse the XML content (String) and construct a Document object with its root element and children.
-     * 
-     * For a real parser, you'd need to handle tags, attributes, nested structures, etc.
-     * This is just a skeleton / placeholder.
-     */
-    public Document parse(String xmlContent) {
-        Document document = new Document();
-        
-        // 1. In a real parser, you would tokenize or use an XML library approach,
-        //    read the root element name, attributes, nested elements, etc.
-
-        // 2. For demo, let’s pretend the root element is always <root>
-        ElementNode root = new ElementNode("root");
-        document.setRootElement(root);
-        
-        // 3. Suppose we just add a text node as a child
-        TextNode textNode = new TextNode("Hello World!");
-        root.addChild(textNode);
-
-        // 4. Return the constructed Document
-        return document;
-    }
+	
+	/**
+	 * 
+	 * Read XML file and parse it into a parseTree using DOM API
+	 * @return XML Document Object
+	 */
+	public static Document parse(String fpath){
+		try {
+			File inputFile = new File(fpath);
+			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            // dbFactory.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
+			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+			Document doc = dBuilder.parse(inputFile);
+			doc.getDocumentElement().normalize();	// removes empty Text nodes, and joins adjacent Text nodes
+			return doc;
+		} catch (Exception e){
+			e.printStackTrace();
+			return null;
+		}
+	}
 }
