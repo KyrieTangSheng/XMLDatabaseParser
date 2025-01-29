@@ -7,7 +7,7 @@ import org.w3c.dom.NodeList;
 public class XMLParserTester {
     public static void main(String[] args) {
         // File path to your XML file
-        String xmlFilePath = "src/main/myxml/j_caesar.xml";
+        String xmlFilePath = "src/main/files/j_caesar.xml";
 
         // Parse the XML file
         Document doc = XMLParser.parse(xmlFilePath);

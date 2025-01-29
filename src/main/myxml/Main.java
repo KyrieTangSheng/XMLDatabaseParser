@@ -7,7 +7,7 @@ import src.main.myxml.XMLParser;
 public class Main {
     public static void main(String[] args) {
         // Specify the path to your XML file
-        String filePath = "src/main/myxml/j_caesar.xml";
+        String filePath = "src/main/files/j_caesar.xml";
 
         // Parse the XML file into a DOM Document object
         Document doc = XMLParser.parse(filePath);
