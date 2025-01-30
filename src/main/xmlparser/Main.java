@@ -1,8 +1,9 @@
-package src.main.myxml;
+package src.main.xmlparser;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
-import src.main.myxml.XMLParser;
+
+import src.main.xmlparser.XMLParser;
 
 public class Main {
     public static void main(String[] args) {

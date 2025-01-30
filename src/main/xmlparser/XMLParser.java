@@ -1,4 +1,4 @@
-package src.main.myxml;
+package src.main.xmlparser;
 
 import java.io.File;
 import java.util.List;
