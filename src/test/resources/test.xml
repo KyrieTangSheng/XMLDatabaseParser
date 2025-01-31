@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+    <book id="1">
+        <title>Harry Potter</title>
+        <author>J.K. Rowling</author>
+        <price>29.99</price>
+    </book>
+    <book id="2">
+        <title>The Hobbit</title>
+        <author>J.R.R. Tolkien</author>
+        <price>24.99</price>
+    </book>
+</bookstore> 
