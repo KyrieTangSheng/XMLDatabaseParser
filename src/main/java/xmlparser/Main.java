@@ -1,9 +1,12 @@
-package src.main.java.xmlparser;
+package xmlparser;
 
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
 import org.w3c.dom.*;
 import java.util.LinkedList;
+import xpath.XPathLexer;
+import xpath.XPathParser;
+import xpath.XPathEvaluator;
 
 public class Main {
     public static void main(String[] args) {

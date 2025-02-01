@@ -1,4 +1,7 @@
 // Generated from XPath.g4 by ANTLR 4.13.2
+
+package xpath;
+
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
 /**
