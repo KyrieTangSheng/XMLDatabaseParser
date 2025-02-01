@@ -10,32 +10,22 @@ import xpath.XPathEvaluator;
 
 public class Main {
     public static void main(String[] args) {
-        // ✅ Step 1: Parse XML file
-        String filePath = "src/main/files/j_caesar.xml";
-        Document doc = XMLParser.parse(filePath);
+        String xpathQuery = "doc(\"j_caesar.xml\")//PERSONA";  // Selecting all <TITLE> elements
+        XPathLexer lexer = new XPathLexer(CharStreams.fromString(xpathQuery));
+        XPathParser parser = new XPathParser(new CommonTokenStream(lexer));
+        ParseTree tree = parser.xpath(); // Parse as relative path
 
-        if (doc != null) {
-            // Get the root element
-            Element root = doc.getDocumentElement();
-            System.out.println("Root Element: " + root.getTagName());
+        System.out.println("Parse Tree: " + tree.toStringTree(parser)); // Debugging parse tree
 
-            // ✅ Step 2: Parse an XPath query
-            String xpathQuery = "TITLE";  // Selecting all <TITLE> elements
-            XPathLexer lexer = new XPathLexer(CharStreams.fromString(xpathQuery));
-            XPathParser parser = new XPathParser(new CommonTokenStream(lexer));
-            ParseTree tree = parser.relativePath(); // Parse as relative path
+        // ✅ Step 3: Evaluate XPath expression
+        XPathEvaluator evaluator = new XPathEvaluator();
+        LinkedList<Node> result = evaluator.visit(tree);
 
-            // ✅ Step 3: Evaluate XPath expression
-            XPathEvaluator evaluator = new XPathEvaluator(root);
-            LinkedList<Node> result = evaluator.visit(tree);
 
-            // ✅ Step 4: Print matching nodes
-            System.out.println("Matching nodes for XPath: " + xpathQuery);
-            for (Node node : result) {
-                System.out.println(node.getTextContent().trim()); // Print text inside matched nodes
-            }
-        } else {
-            System.out.println("Failed to parse the XML file.");
+        // ✅ Step 4: Print matching nodes
+        System.out.println("Matching nodes for XPath: " + xpathQuery);
+        for (Node node : result) {
+            System.out.println(node.getTextContent().trim()); // Print text inside matched nodes
         }
     }
 }

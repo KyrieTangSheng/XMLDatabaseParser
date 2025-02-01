@@ -1,7 +1,5 @@
-// Generated from /Users/tangsheng/Desktop/CourseWork/2025Winter/DBImpl/XMLDatabaseParser/grammar/XPath.g4 by ANTLR 4.13.1
-
+// Generated from /Users/tony/Desktop/XMLDatabaseParser/grammar/xpath.g4 by ANTLR 4.13.1
 package xpath;
-
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;
@@ -95,7 +93,7 @@ public class XPathLexer extends Lexer {
 	}
 
 	@Override
-	public String getGrammarFileName() { return "XPath.g4"; }
+	public String getGrammarFileName() { return "xpath.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
