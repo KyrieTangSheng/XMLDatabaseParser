@@ -1,4 +1,4 @@
-package src.main.java.xmlparser;
+package xmlparser;
 
 import java.io.File;
 import java.util.List;

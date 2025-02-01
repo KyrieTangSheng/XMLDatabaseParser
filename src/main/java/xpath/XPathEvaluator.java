@@ -1,4 +1,4 @@
-package src.main.xmlparser;
+package xpath;
 
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
