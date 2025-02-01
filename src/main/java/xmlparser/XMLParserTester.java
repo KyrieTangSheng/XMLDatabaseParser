@@ -1,4 +1,4 @@
-package src.main.xmlparser;
+package src.main.java.xmlparser;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
