@@ -10,7 +10,7 @@ import xpath.XPathEvaluator;
 
 public class Main {
     public static void main(String[] args) {
-        String xpathQuery = "doc(\"j_caesar.xml\")//LINE//*";  // Selecting all <TITLE> elements
+        String xpathQuery = "doc(\"j_caesar.xml\")//ACT/SCENE";  // Selecting all <TITLE> elements
         XPathLexer lexer = new XPathLexer(CharStreams.fromString(xpathQuery));
         XPathParser parser = new XPathParser(new CommonTokenStream(lexer));
         ParseTree tree = parser.xpath(); // Parse as relative path

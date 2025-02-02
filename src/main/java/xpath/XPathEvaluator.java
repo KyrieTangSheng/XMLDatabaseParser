@@ -2,10 +2,13 @@ package xpath;
 
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import xmlparser.XMLParser;
 
+import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.Set;
 
 public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
 
@@ -141,6 +144,51 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
         return currentContext;
     }
 
+    @Override
+    public LinkedList<Node> visitTextFunc(XPathParser.TextFuncContext ctx) {
+        LinkedList<Node> result = new LinkedList<>();
+        for(Node node : currentContext){
+            LinkedList<Node> children = getChildren(node);
+            for(Node child: children){
+                if(child.getNodeType() == Node.TEXT_NODE){
+                    result.add(child);
+                }
+            }
+        }
+        currentContext = result;
+        return currentContext;
+    }
+
+    @Override
+    public LinkedList<Node> visitAttribute(XPathParser.AttributeContext ctx) {
+        LinkedList<Node> result = new LinkedList<>();
+        String attName = ctx.getText();
+        for(Node node : currentContext){
+            if(node.hasAttributes()){
+                Attr attribute = (Attr) node.getAttributes().getNamedItem(attName);
+                if (attribute != null) {
+                    result.add(attribute); // Add the attribute node itself
+                }
+            }
+        }
+        currentContext = result;
+        return currentContext;
+    }
+
+    @Override
+    public LinkedList<Node> visitRpGrouping(XPathParser.RpGroupingContext ctx) {
+        return visit(ctx.relativePath());
+    }
+    
+    @Override
+    public LinkedList<Node> visitRpSlash(XPathParser.RpSlashContext ctx) {
+        visit(ctx.relativePath(0)); // Evaluate rp1 on current node set
+        visit(ctx.relativePath(1)); // Evaluate rp2 on each node
+        LinkedList<Node> result = getUnique(currentContext);
+        currentContext = result;
+        return currentContext;
+    }
+
     // ----------------------------------------------------------------
     // Helper Methods
     // ----------------------------------------------------------------
@@ -148,6 +196,17 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
     /**
      * Returns all children of the nodes
      */
+
+    private LinkedList<Node> getUnique(LinkedList<Node> nodeList){
+        LinkedList<Node> uniqueList = new LinkedList<>();
+        HashSet<Node> seenNodes = new HashSet<>();
+        for (Node node : nodeList) {
+            if (seenNodes.add(node)) { // HashSet ensures uniqueness
+                uniqueList.add(node);
+            }
+        }
+        return uniqueList;
+    }
     private LinkedList<Node> getChildren(Node node) {
         LinkedList<Node> result = new LinkedList<>();
         NodeList children = node.getChildNodes();
