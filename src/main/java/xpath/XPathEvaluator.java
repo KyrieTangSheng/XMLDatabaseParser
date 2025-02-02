@@ -13,8 +13,6 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
     private LinkedList<Node> currentContext;
 
     public XPathEvaluator() {
-        // Initially, the context is empty.
-        System.out.println("constructor");
         currentContext = new LinkedList<>();
     }
 
@@ -35,7 +33,7 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
 
     /**
      * Handles expressions of the form: 
-     *    doc("j_caesar.xml")/relativePath
+     *    doc("fileName")/relativePath
      */
     @Override
     public LinkedList<Node> visitAbsoluteSlash(XPathParser.AbsoluteSlashContext ctx) {
@@ -54,7 +52,7 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
 
     /**
      * Handles expressions of the form:
-     *    doc("j_caesar.xml")//relativePath
+     *    doc("fileName")//relativePath
      */
     @Override
     public LinkedList<Node> visitAbsoluteDoubleSlash(XPathParser.AbsoluteDoubleSlashContext ctx) {
@@ -74,8 +72,6 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
 
     /**
      * Processes a tag name match (e.g., PERSONA).
-     * For each node in the current context, we collect the immediate children
-     * whose tag name matches the given tag name.
      */
     @Override
     public LinkedList<Node> visitTagNameMatch(XPathParser.TagNameMatchContext ctx) {
@@ -91,6 +87,57 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
             }
         }
         currentContext = result;
+        return currentContext;
+    }
+
+    @Override
+    public LinkedList<Node> visitAllChildren(XPathParser.AllChildrenContext ctx) {
+        LinkedList<Node> result = new LinkedList<>();
+        // For each node in the current context, add its children that match.
+        for (Node node : currentContext) {
+            LinkedList<Node> children = getChildren(node);
+            result.addAll(children);
+        }
+        currentContext = result;
+        return currentContext;
+    }
+
+    @Override
+    public LinkedList<Node> visitSelf(XPathParser.SelfContext ctx){
+        return currentContext;
+    }
+
+    @Override
+    public LinkedList<Node> visitParent(XPathParser.ParentContext ctx) {
+        System.out.println("✅ visitParent() called!");
+    
+        LinkedList<Node> newContext = new LinkedList<>();
+    
+        // Traverse each node in the current context and collect their parent nodes
+        for (Node node : currentContext) {
+            Node parent = node.getParentNode();
+            System.out.println("🔍 Checking parent of node: " + node.getNodeName());
+    
+            if (parent != null) {
+                System.out.println("📌 Found parent: " + parent.getNodeName() + " (Type: " + parent.getNodeType() + ")");
+    
+                if (parent.getNodeType() == Node.ELEMENT_NODE) {
+                    if (!newContext.contains(parent)) { // Ensure uniqueness
+                        newContext.add(parent);
+                        System.out.println("✅ Added parent: " + parent.getNodeName());
+                    }
+                } else {
+                    System.out.println("❌ Skipping non-element parent: " + parent.getNodeName());
+                }
+            } else {
+                System.out.println("❌ No parent found for node: " + node.getNodeName());
+            }
+        }
+    
+        System.out.println("🔍 Final Parent Nodes: " + newContext.size());
+        
+        // Update context
+        currentContext = newContext;
         return currentContext;
     }
 

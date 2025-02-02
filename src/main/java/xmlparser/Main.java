@@ -10,7 +10,7 @@ import xpath.XPathEvaluator;
 
 public class Main {
     public static void main(String[] args) {
-        String xpathQuery = "doc(\"j_caesar.xml\")//PERSONA";  // Selecting all <TITLE> elements
+        String xpathQuery = "doc(\"j_caesar.xml\")//LINE//*";  // Selecting all <TITLE> elements
         XPathLexer lexer = new XPathLexer(CharStreams.fromString(xpathQuery));
         XPathParser parser = new XPathParser(new CommonTokenStream(lexer));
         ParseTree tree = parser.xpath(); // Parse as relative path
@@ -21,11 +21,7 @@ public class Main {
         XPathEvaluator evaluator = new XPathEvaluator();
         LinkedList<Node> result = evaluator.visit(tree);
 
-
-        // ✅ Step 4: Print matching nodes
-        System.out.println("Matching nodes for XPath: " + xpathQuery);
-        for (Node node : result) {
-            System.out.println(node.getTextContent().trim()); // Print text inside matched nodes
-        }
+        System.out.println(result.toString());
+        
     }
 }
