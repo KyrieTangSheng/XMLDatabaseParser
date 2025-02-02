@@ -80,15 +80,17 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
     @Override
     public LinkedList<Node> visitTagNameMatch(XPathParser.TagNameMatchContext ctx) {
         String tagName = ctx.tagName().getText();
-        LinkedList<Node> newContext = new LinkedList<>();
-
+        LinkedList<Node> result = new LinkedList<>();
         // For each node in the current context, add its children that match.
         for (Node node : currentContext) {
-            newContext.addAll(getDirectChildrenByTag(node, tagName));
+            LinkedList<Node> children = getChildren(node);
+            for(Node child : children){
+                if(child.getNodeName().equals(tagName)){
+                    result.add(child);
+                }
+            }
         }
-
-        // Update the current context.
-        currentContext = newContext;
+        currentContext = result;
         return currentContext;
     }
 
@@ -97,17 +99,14 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
     // ----------------------------------------------------------------
 
     /**
-     * Returns all immediate child elements of the given node that have the specified tag name.
+     * Returns all children of the nodes
      */
-    private LinkedList<Node> getDirectChildrenByTag(Node node, String tagName) {
+    private LinkedList<Node> getChildren(Node node) {
         LinkedList<Node> result = new LinkedList<>();
         NodeList children = node.getChildNodes();
         for (int i = 0; i < children.getLength(); i++) {
             Node child = children.item(i);
-            // Only consider element nodes.
-            if (child.getNodeType() == Node.ELEMENT_NODE && child.getNodeName().equals(tagName)) {
-                result.add(child);
-            }
+            result.add(child);
         }
         return result;
     }
