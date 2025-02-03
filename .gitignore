@@ -1,3 +1,6 @@
+# Ignore Maven target folder (compiled files)
+target/
+
 # Compiled class file
 *.class
 

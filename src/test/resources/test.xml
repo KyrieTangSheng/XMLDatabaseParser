@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <parent>
+        <child id="1">Text1</child>
+        <child id="2">Text2</child>
+    </parent>
+    <books>
+        <book id="1">
+            <title>XML Processing</title>
+            <author>John Doe</author>
+            <price>29.99</price>
+        </book>
+        <book id="2">
+            <title>XPath Tutorial</title>
+            <author>Jane Smith</author>
+            <price>19.99</price>
+            <review>Great book!</review>
+        </book>
+    </books>
+</root> 
