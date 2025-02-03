@@ -16,7 +16,7 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
     private LinkedList<Node> currentContext;
 
     public XPathEvaluator() {
-        currentContext = new LinkedList<>();
+        this.currentContext = new LinkedList<>();
     }
 
     // ------------------
@@ -46,8 +46,8 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
         Node root = doc.getDocumentElement(); 
 
         // Set the current context to contain only the root.
-        currentContext.clear();
-        currentContext.add(root);
+        this.currentContext.clear();
+        this.currentContext.add(root);
 
         // Step 2: Process the relative path on this context.
         return visit(ctx.relativePath());
@@ -65,9 +65,9 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
         Node root = doc.getDocumentElement();
 
         // Set the current context to the root and all its descendant elements.
-        currentContext.clear();
-        currentContext.add(root);
-        currentContext.addAll(getDescendants(root));
+        this.currentContext.clear();
+        this.currentContext.add(root);
+        this.currentContext.addAll(getDescendants(root));
 
         // Step 2: Process the relative path on the updated context.
         return visit(ctx.relativePath());
@@ -89,8 +89,8 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
                 }
             }
         }
-        currentContext = result;
-        return currentContext;
+        this.currentContext = result;
+        return this.currentContext;
     }
 
     @Override
@@ -101,13 +101,13 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
             LinkedList<Node> children = getChildren(node);
             result.addAll(children);
         }
-        currentContext = result;
-        return currentContext;
+        this.currentContext = result;
+        return this.currentContext;
     }
 
     @Override
     public LinkedList<Node> visitSelf(XPathParser.SelfContext ctx){
-        return currentContext;
+        return this.currentContext;
     }
 
     @Override
@@ -140,8 +140,8 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
         System.out.println("🔍 Final Parent Nodes: " + newContext.size());
         
         // Update context
-        currentContext = newContext;
-        return currentContext;
+        this.currentContext = newContext;
+        return this.currentContext;
     }
 
     @Override
@@ -155,8 +155,8 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
                 }
             }
         }
-        currentContext = result;
-        return currentContext;
+        this.currentContext = result;
+        return this.currentContext;
     }
 
     @Override
@@ -171,8 +171,8 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
                 }
             }
         }
-        currentContext = result;
-        return currentContext;
+        this.currentContext = result;
+        return this.currentContext;
     }
 
     @Override
@@ -185,18 +185,51 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
         visit(ctx.relativePath(0)); // Evaluate rp1 on current node set
         visit(ctx.relativePath(1)); // Evaluate rp2 on each node
         LinkedList<Node> result = getUnique(currentContext);
-        currentContext = result;
-        return currentContext;
+        this.currentContext = result;
+        return this.currentContext;
     }
+
+    @Override
+    public LinkedList<Node> visitRpDoubleSlash(XPathParser.RpDoubleSlashContext ctx){
+        visit(ctx.relativePath(0)); 
+        LinkedList<Node> temp = new LinkedList<>();
+        for (Node node : currentContext) {
+            temp.addAll(getDescendants(node));
+        }
+        this.currentContext = temp;
+        visit(ctx.relativePath(1));
+        this.currentContext = getUnique(this.currentContext);
+        return this.currentContext;
+
+    }
+
+    @Override
+    public LinkedList<Node> visitRpFilter(XPathParser.RpFilterContext ctx){
+        return this.currentContext;
+
+    }
+
+    @Override
+    public LinkedList<Node> visitRpConcat(XPathParser.RpConcatContext ctx){
+        LinkedList<Node> temp = new LinkedList<>();
+        LinkedList<Node> previousContext = this.currentContext;
+        visit(ctx.relativePath(0));
+        temp.addAll(this.currentContext); 
+        this.currentContext = previousContext;
+        visit(ctx.relativePath(1)); 
+        this.currentContext.addAll(temp);
+        return this.currentContext;
+    }
+
+
 
     // ----------------------------------------------------------------
     // Helper Methods
     // ----------------------------------------------------------------
 
     /**
-     * Returns all children of the nodes
+     * Returns a LinkedList without duplicates 
      */
-
     private LinkedList<Node> getUnique(LinkedList<Node> nodeList){
         LinkedList<Node> uniqueList = new LinkedList<>();
         HashSet<Node> seenNodes = new HashSet<>();
@@ -207,6 +240,11 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
         }
         return uniqueList;
     }
+
+    /**
+     * Returns all children of the nodes
+     */
+
     private LinkedList<Node> getChildren(Node node) {
         LinkedList<Node> result = new LinkedList<>();
         NodeList children = node.getChildNodes();
