@@ -20,16 +20,18 @@ public class XMLParser {
 	 * Read XML file and parse it into a parseTree using DOM API
 	 * @return XML Document Object
 	 */
-	public static Document parse(String fpath){
+	public static Document parse(String fileName) {
 		try {
-			File inputFile = new File(fpath);
-			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-            // dbFactory.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
-			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-			Document doc = dBuilder.parse(inputFile);
-			doc.getDocumentElement().normalize();	// removes empty Text nodes, and joins adjacent Text nodes
-			return doc;
-		} catch (Exception e){
+			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+			
+			// Disable DTD validation
+			factory.setValidating(false);
+			factory.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
+			
+			DocumentBuilder builder = factory.newDocumentBuilder();
+			return builder.parse(fileName);
+		} catch (Exception e) {
+			System.err.println("Error parsing XML file: " + fileName);
 			e.printStackTrace();
 			return null;
 		}

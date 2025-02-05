@@ -24,12 +24,9 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
     // ------------------
     @Override
     public LinkedList<Node> visitXpath(XPathParser.XpathContext ctx) {
-        System.out.println("✅ visitXpath() called");
         if (ctx.absolutePath() != null) {
-            System.out.println("Processing absolutePath...");
             return visit(ctx.absolutePath());
         } else {
-            System.out.println("Processing relativePath...");
             return visit(ctx.relativePath());
         }
     }
@@ -80,15 +77,26 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
     public LinkedList<Node> visitTagNameMatch(XPathParser.TagNameMatchContext ctx) {
         String tagName = ctx.tagName().getText();
         LinkedList<Node> result = new LinkedList<>();
-        // For each node in the current context, add its children that match.
+        
+        // First check if any current context nodes match the tag name
         for (Node node : currentContext) {
-            LinkedList<Node> children = getChildren(node);
-            for(Node child : children){
-                if(child.getNodeName().equals(tagName)){
-                    result.add(child);
+            if (node.getNodeName().equals(tagName)) {
+                result.add(node);
+            }
+        }
+        
+        // If no matches found in current nodes, look at children
+        if (result.isEmpty()) {
+            for (Node node : currentContext) {
+                LinkedList<Node> children = getChildren(node);
+                for (Node child : children) {
+                    if (child.getNodeName().equals(tagName)) {
+                        result.add(child);
+                    }
                 }
             }
         }
+        
         this.currentContext = result;
         return this.currentContext;
     }
@@ -112,36 +120,15 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
 
     @Override
     public LinkedList<Node> visitParent(XPathParser.ParentContext ctx) {
-        System.out.println("✅ visitParent() called!");
-    
-        LinkedList<Node> newContext = new LinkedList<>();
-    
-        // Traverse each node in the current context and collect their parent nodes
+        LinkedList<Node> result = new LinkedList<>();
         for (Node node : currentContext) {
             Node parent = node.getParentNode();
-            System.out.println("🔍 Checking parent of node: " + node.getNodeName());
-    
-            if (parent != null) {
-                System.out.println("📌 Found parent: " + parent.getNodeName() + " (Type: " + parent.getNodeType() + ")");
-    
-                if (parent.getNodeType() == Node.ELEMENT_NODE) {
-                    if (!newContext.contains(parent)) { // Ensure uniqueness
-                        newContext.add(parent);
-                        System.out.println("✅ Added parent: " + parent.getNodeName());
-                    }
-                } else {
-                    System.out.println("❌ Skipping non-element parent: " + parent.getNodeName());
-                }
-            } else {
-                System.out.println("❌ No parent found for node: " + node.getNodeName());
+            if (parent != null && parent.getNodeType() == Node.ELEMENT_NODE) {
+                result.add(parent);
             }
         }
-    
-        System.out.println("🔍 Final Parent Nodes: " + newContext.size());
-        
-        // Update context
-        this.currentContext = newContext;
-        return this.currentContext;
+        currentContext = getUnique(result);
+        return currentContext;
     }
 
     @Override
@@ -161,18 +148,21 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
 
     @Override
     public LinkedList<Node> visitAttribute(XPathParser.AttributeContext ctx) {
+        String attributeName = ctx.attributeName().getText();
         LinkedList<Node> result = new LinkedList<>();
-        String attName = ctx.getText();
-        for(Node node : currentContext){
-            if(node.hasAttributes()){
-                Attr attribute = (Attr) node.getAttributes().getNamedItem(attName);
-                if (attribute != null) {
-                    result.add(attribute); // Add the attribute node itself
+        
+        for (Node node : currentContext) {
+            if (node.getNodeType() == Node.ELEMENT_NODE) {
+                org.w3c.dom.Element element = (org.w3c.dom.Element) node;
+                if (element.hasAttribute(attributeName)) {
+                    org.w3c.dom.Attr attr = element.getAttributeNode(attributeName);
+                    result.add(attr);
                 }
             }
         }
-        this.currentContext = result;
-        return this.currentContext;
+        
+        currentContext = result;
+        return currentContext;
     }
 
     @Override
