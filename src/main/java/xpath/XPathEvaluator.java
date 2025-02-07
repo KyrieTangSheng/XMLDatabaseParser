@@ -19,9 +19,6 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
         this.currentContext = new LinkedList<>();
     }
 
-    // ------------------
-    // Entry Rule (optional)
-    // ------------------
     @Override
     public LinkedList<Node> visitXpath(XPathParser.XpathContext ctx) {
         if (ctx.absolutePath() != null) {
@@ -37,16 +34,12 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
      */
     @Override
     public LinkedList<Node> visitAbsoluteSlash(XPathParser.AbsoluteSlashContext ctx) {
-        // Step 1: Load the XML document and get its root element.
         String fileName = ctx.fileName().getText().replace("\"", "");
         Document doc = XMLParser.parse(fileName);
         Node root = doc.getDocumentElement(); 
 
-        // Set the current context to contain only the root.
         this.currentContext.clear();
         this.currentContext.add(root);
-
-        // Step 2: Process the relative path on this context.
         return visit(ctx.relativePath());
     }
 
@@ -56,17 +49,13 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
      */
     @Override
     public LinkedList<Node> visitAbsoluteDoubleSlash(XPathParser.AbsoluteDoubleSlashContext ctx) {
-        // Step 1: Load the XML document and get its root element.
         String fileName = ctx.fileName().getText().replace("\"", "");
         Document doc = XMLParser.parse(fileName);
         Node root = doc.getDocumentElement();
 
-        // Set the current context to the root and all its descendant elements.
         this.currentContext.clear();
         this.currentContext.add(root);
         this.currentContext.addAll(getDescendants(root));
-
-        // Step 2: Process the relative path on the updated context.
         return visit(ctx.relativePath());
     }
 
@@ -78,14 +67,12 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
         String tagName = ctx.tagName().getText();
         LinkedList<Node> result = new LinkedList<>();
         
-        // First check if any current context nodes match the tag name
         for (Node node : currentContext) {
             if (node.getNodeName().equals(tagName)) {
                 result.add(node);
             }
         }
         
-        // If no matches found in current nodes, look at children
         if (result.isEmpty()) {
             for (Node node : currentContext) {
                 LinkedList<Node> children = getChildren(node);
@@ -104,7 +91,6 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
     @Override
     public LinkedList<Node> visitAllChildren(XPathParser.AllChildrenContext ctx) {
         LinkedList<Node> result = new LinkedList<>();
-        // For each node in the current context, add its children that match.
         for (Node node : currentContext) {
             LinkedList<Node> children = getChildren(node);
             result.addAll(children);
@@ -172,8 +158,8 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
     
     @Override
     public LinkedList<Node> visitRpSlash(XPathParser.RpSlashContext ctx) {
-        visit(ctx.relativePath(0)); // Evaluate rp1 on current node set
-        visit(ctx.relativePath(1)); // Evaluate rp2 on each node
+        visit(ctx.relativePath(0));
+        visit(ctx.relativePath(1));
         LinkedList<Node> result = getUnique(currentContext);
         this.currentContext = result;
         return this.currentContext;
@@ -195,23 +181,19 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
 
     @Override
     public LinkedList<Node> visitRpFilter(XPathParser.RpFilterContext ctx) {        
-        // Evaluate relative path
         visit(ctx.relativePath());
         
-        // For each node in current context, evaluate filter
         LinkedList<Node> result = new LinkedList<>();
         for (Node node : currentContext) {
             LinkedList<Node> temp = new LinkedList<>();
             temp.add(node);
             currentContext = temp;
             
-            // If filter evaluates to true, add node to result
             if (!visit(ctx.filter()).isEmpty()) {
                 result.add(node);
             }
         }
         
-        // Restore original context and update with filtered results
         currentContext = result;
         return currentContext;
     }
@@ -232,19 +214,14 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
     // Returns true if relative path evaluates to non-empty result
     @Override
     public LinkedList<Node> visitRpInFilter(XPathParser.RpInFilterContext ctx) {
-        // Save current context
         LinkedList<Node> originalContext = new LinkedList<>(currentContext);
         
-        // Evaluate relative path
         visit(ctx.relativePath());
         
-        // Non-empty result means filter is true
         boolean result = !currentContext.isEmpty();
         
-        // Restore context
         currentContext = originalContext;
         
-        // Return original context if true, empty list if false
         return result ? currentContext : new LinkedList<>();
     }
 
@@ -252,19 +229,15 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
     // Returns true if any node from rp1 is value-equal to any node from rp2
     @Override
     public LinkedList<Node> visitEqualityFilter(XPathParser.EqualityFilterContext ctx) {
-        // Save original context
         LinkedList<Node> originalContext = new LinkedList<>(currentContext);
         
-        // Evaluate first path
         visit(ctx.relativePath(0));
         LinkedList<Node> leftResults = new LinkedList<>(currentContext);
         
-        // Restore and evaluate second path
         currentContext = originalContext;
         visit(ctx.relativePath(1));
         LinkedList<Node> rightResults = currentContext;
         
-        // Check if any pair of nodes are value-equal
         boolean isEqual = false;
         for (Node left : leftResults) {
             for (Node right : rightResults) {
@@ -276,7 +249,6 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
             if (isEqual) break;
         }
         
-        // Restore original context
         currentContext = originalContext;
         return isEqual ? currentContext : new LinkedList<>();
     }
@@ -285,19 +257,15 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
     // Returns true if any node from rp1 is identical to any node from rp2
     @Override
     public LinkedList<Node> visitIdentityFilter(XPathParser.IdentityFilterContext ctx) {
-        // Save original context
         LinkedList<Node> originalContext = new LinkedList<>(currentContext);
         
-        // Evaluate first path
         visit(ctx.relativePath(0));
         LinkedList<Node> leftResults = new LinkedList<>(currentContext);
         
-        // Restore and evaluate second path
         currentContext = originalContext;
         visit(ctx.relativePath(1));
         LinkedList<Node> rightResults = currentContext;
         
-        // Check if any pair of nodes are identical
         boolean isIdentical = false;
         for (Node left : leftResults) {
             for (Node right : rightResults) {
@@ -309,7 +277,6 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
             if (isIdentical) break;
         }
         
-        // Restore original context
         currentContext = originalContext;
         return isIdentical ? currentContext : new LinkedList<>();
     }
@@ -318,16 +285,12 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
     // Returns true if any node's text content equals the string constant
     @Override
     public LinkedList<Node> visitStringFilter(XPathParser.StringFilterContext ctx) {
-        // Save original context
         LinkedList<Node> originalContext = new LinkedList<>(currentContext);
         
-        // Evaluate relative path
         visit(ctx.relativePath());
         
-        // Get string constant (remove quotes)
         String constant = ctx.StringConstant().getText().replaceAll("\"", "");
         
-        // Check if any node's text content matches the string constant
         boolean matches = false;
         for (Node node : currentContext) {
             if (node.getTextContent().equals(constant)) {
@@ -336,14 +299,12 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
             }
         }
         
-        // Restore original context
         currentContext = originalContext;
         return matches ? currentContext : new LinkedList<>();
     }
 
 
     // f → (f)
-    // Grouping filter expressions
     @Override
     public LinkedList<Node> visitFilterGrouping(XPathParser.FilterGroupingContext ctx) {
         return visit(ctx.filter());
@@ -408,7 +369,7 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
         LinkedList<Node> uniqueList = new LinkedList<>();
         HashSet<Node> seenNodes = new HashSet<>();
         for (Node node : nodeList) {
-            if (seenNodes.add(node)) { // HashSet ensures uniqueness
+            if (seenNodes.add(node)) {
                 uniqueList.add(node);
             }
         }
@@ -447,7 +408,6 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
 
     // Helper method for value equality
     private boolean areNodesValueEqual(Node n1, Node n2) {
-        // Different node types can't be equal
         if (n1.getNodeType() != n2.getNodeType()) return false;
         
         switch (n1.getNodeType()) {
@@ -455,15 +415,12 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
                 return n1.getNodeValue().equals(n2.getNodeValue());
             
             case Node.ELEMENT_NODE:
-                // Check tag names
                 if (!n1.getNodeName().equals(n2.getNodeName())) return false;
                 
-                // Check children count
                 NodeList children1 = n1.getChildNodes();
                 NodeList children2 = n2.getChildNodes();
                 if (children1.getLength() != children2.getLength()) return false;
                 
-                // Recursively check children
                 for (int i = 0; i < children1.getLength(); i++) {
                     if (!areNodesValueEqual(children1.item(i), children2.item(i))) {
                         return false;

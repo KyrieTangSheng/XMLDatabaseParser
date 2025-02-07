@@ -72,3 +72,5 @@ local.properties
 # Windows
 Thumbs.db
 Desktop.ini
+
+.vscode/
