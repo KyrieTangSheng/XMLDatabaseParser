@@ -23,7 +23,6 @@ public class XPathQueryDemo {
     public void demonstrateQueries() {
         evaluator = new XPathEvaluator();
         
-        // Create output directory if it doesn't exist
         File outputDir = new File(OUTPUT_DIR);
         System.out.println("Attempting to create directory: " + outputDir.getAbsolutePath());
         
