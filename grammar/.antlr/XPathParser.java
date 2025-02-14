@@ -1,4 +1,4 @@
-// Generated from /Users/tangsheng/Desktop/CourseWork/2025Winter/DBImpl/XMLDatabaseParser/grammar/XPath.g4 by ANTLR 4.13.1
+// Generated from /Users/tangsheng/Desktop/CodeProjects/XMLDatabaseParser/grammar/XPath.g4 by ANTLR 4.13.1
 
 package xpath;
 
