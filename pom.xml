@@ -70,6 +70,7 @@
                         <configuration>
                             <includes>
                                 <include>**/XPathEvaluatorTest.java</include>
+                                <include>**/XQueryEvaluatorSimplifiedTest.java</include>
                             </includes>
                         </configuration>
                     </execution>

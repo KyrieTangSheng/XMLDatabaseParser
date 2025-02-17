@@ -9,6 +9,7 @@ import xmlparser.XMLParser;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Set;
+import java.util.List;
 
 public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
 
@@ -385,10 +386,16 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
         NodeList children = node.getChildNodes();
         for (int i = 0; i < children.getLength(); i++) {
             Node child = children.item(i);
+            // Skip text nodes that are only whitespace
+            // if (child.getNodeType() == Node.TEXT_NODE && child.getTextContent().trim().isEmpty()) {
+            //     continue;
+            // }
+            //
             result.add(child);
         }
         return result;
     }
+    
 
     /**
      * Recursively collects all descendant element nodes (children, grandchildren, etc.).
@@ -431,5 +438,9 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
             default:
                 return n1.isEqualNode(n2);
         }
+    }
+
+    public void setCurrentContext(List<Node> nodes) {
+        this.currentContext = new LinkedList<>(nodes);
     }
 }

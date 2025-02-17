@@ -24,38 +24,28 @@ public class XPathEvaluatorTest {
         ParseTree tree = parser.xpath();
         LinkedList<Node> result = evaluator.visit(tree);
         
-        // Print query and results in XML format
-        System.out.println("\nQuery: " + xpathQuery);
-        System.out.println("Result size: " + (result != null ? result.size() : "null"));
-        if (result != null) {
-            System.out.println("Results:");
-            for (Node node : result) {
-                System.out.println(formatNode(node));
-            }
-        }
-        
         return result;
     }
 
-    private String formatNode(Node node) {
-        StringBuilder sb = new StringBuilder();
-        String nodeName = node.getNodeName();
-        String content = node.getTextContent().trim();
+    // private String formatNode(Node node) {
+    //     StringBuilder sb = new StringBuilder();
+    //     String nodeName = node.getNodeName();
+    //     String content = node.getTextContent().trim();
         
-        // Skip #text nodes
-        if (nodeName.equals("#text")) {
-            return "";
-        }
+    //     // Skip #text nodes
+    //     if (nodeName.equals("#text")) {
+    //         return "";
+    //     }
         
-        // Format as XML
-        sb.append("<").append(nodeName).append(">");
-        if (!content.isEmpty()) {
-            sb.append(content);
-        }
-        sb.append("</").append(nodeName).append(">\n");
+    //     // Format as XML
+    //     sb.append("<").append(nodeName).append(">");
+    //     if (!content.isEmpty()) {
+    //         sb.append(content);
+    //     }
+    //     sb.append("</").append(nodeName).append(">\n");
         
-        return sb.toString();
-    }
+    //     return sb.toString();
+    // }
 
     // Absolute Path Tests
     @Test

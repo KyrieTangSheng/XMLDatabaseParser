@@ -8,8 +8,8 @@ xquery: var                                                      # XQueryVariabl
       | absolutePath                                            # XQueryAbsolutePath
       | '(' xquery ')'                                         # XQueryParentheses
       | xquery ',' xquery                                      # XQueryConcat
-      | xquery '/' relativePath                               # XQueryPath
-      | xquery '//' relativePath                              # XQueryDoubleSlash
+      | xquery '/' relativePath                                # XQueryPath
+      | xquery '//' relativePath                               # XQueryDoubleSlash
       | '<' tagName '>' '{' xquery '}' '</' tagName '>'       # XQueryTag
       | forClause letClause? whereClause? returnClause         # XQueryFLWR
       | letClause xquery                                       # XQueryLet
