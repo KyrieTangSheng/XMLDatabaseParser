@@ -35,7 +35,7 @@ public class XPathParser extends Parser {
 
 	private static String[] makeLiteralNames() {
 		return new String[] {
-			null, "'('", "'/'", "'//'", "'['", "']'", "'doc'", "'*'", "'.'", "'..'", 
+			null, "'('", "'/'", "'//'", "'['", "']'", null, "'*'", "'.'", "'..'", 
 			"'text('", "')'", "'@'", "'='", "'eq'", "'=='", "'is'", null, "'and'", 
 			"'or'", "'not'", null, "','"
 		};

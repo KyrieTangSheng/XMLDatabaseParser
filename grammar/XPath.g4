@@ -13,8 +13,8 @@ package xpath;
 xpath: absolutePath | relativePath;
 
 absolutePath:
-	'doc' '(' fileName ')' '/' relativePath		# AbsoluteSlash
-	| 'doc' '(' fileName ')' '//' relativePath	# AbsoluteDoubleSlash;
+	DOC '(' fileName ')' '/' relativePath		# AbsoluteSlash
+	| DOC '(' fileName ')' '//' relativePath	# AbsoluteDoubleSlash;
 
 /*
  * The relativePath is basically the union of all rp constructs in your grammar. We keep them in
@@ -46,7 +46,7 @@ filter:
 // ------------------------------------------------------------------- LEXER RULES
 // -------------------------------------------------------------------
 
-DOC: 'doc';
+DOC: 'doc' | 'document';
 STAR: '*';
 DOT: '.';
 DOTDOT: '..';

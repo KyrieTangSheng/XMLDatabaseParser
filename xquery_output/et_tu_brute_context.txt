@@ -1,0 +1,8 @@
+=== Et Tu Brute Context ===
+Query:
+<result>{for $a in document("src/test/resources/j_caesar.xml")//ACT,    $sc in $a//SCENE,    $sp in $sc/SPEECH return <who>{$sp/SPEAKER/text()}</who>,       <when>{           <act>{$a/TITLE/text()}</act>,           <scene>{$sc/TITLE/text()}</scene>       }</when>}</result>
+
+Result:
+<result>
+</result>
+

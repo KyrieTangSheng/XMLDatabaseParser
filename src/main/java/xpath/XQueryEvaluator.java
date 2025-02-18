@@ -1,13 +1,14 @@
 package xpath;
 
-import xmlparser.XMLParser;
-import java.util.*;
 import org.w3c.dom.*;
 import javax.xml.parsers.*;
+import java.util.*;
+import org.antlr.v4.runtime.CharStreams;
+import org.antlr.v4.runtime.CommonTokenStream;
 
 public class XQueryEvaluator extends XQueryBaseVisitor<List<Node>> {
 
-    // The document used to create new nodes (e.g., for tags and text)
+    // The document used to create new nodes (e.g. for tag constructors)
     private Document outputDoc;
     // A stack-based environment for variable bindings
     private Deque<Map<String, List<Node>>> env;
@@ -22,70 +23,80 @@ public class XQueryEvaluator extends XQueryBaseVisitor<List<Node>> {
         } catch (Exception e) {
             throw new RuntimeException("Failed to create output document", e);
         }
-        env = new ArrayDeque<>();
+        this.env = new ArrayDeque<>();
+        // Push an initial (empty) scope
         env.push(new HashMap<>());
-        xpath = new XPathEvaluator();
+
+        // Create a delegate XPath evaluator
+        this.xpath = new XPathEvaluator();
     }
 
-    // ------------------- XQuery Expression Visitors -------------------
+    // ---------------------------------------------------------
+    //  XQuery Expression Visitors
+    // ---------------------------------------------------------
 
-    // xquery: var  # XQueryVariable
+    /**
+     * xquery: var  # XQueryVariable
+     */
     @Override
     public List<Node> visitXQueryVariable(XQueryParser.XQueryVariableContext ctx) {
-        // Get the full variable name including $ prefix
-        String varName = ctx.var().getText();
+        String varName = ctx.var().getText();  // e.g. "$x"
+        // Look up in env stack (from top to bottom)
         for (Map<String, List<Node>> scope : env) {
             if (scope.containsKey(varName)) {
-                List<Node> value = scope.get(varName);
-                return value != null ? value : new ArrayList<>();
+                return scope.get(varName);
             }
         }
         throw new RuntimeException("Undefined variable: " + varName);
     }
 
-    // xquery: stringConstant  # XQueryConstant
+    /**
+     * xquery: stringConstant  # XQueryConstant
+     */
     @Override
     public List<Node> visitXQueryConstant(XQueryParser.XQueryConstantContext ctx) {
-        String str = ctx.stringConstant().getText();
-        // Remove the surrounding quotes
-        str = str.substring(1, str.length() - 1);
-        Text text = outputDoc.createTextNode(str);
-        return Collections.singletonList(text);
+        // stringConstant -> StringConstant from XPath grammar
+        String quoted = ctx.stringConstant().getText();  // e.g. "\"Hello\""
+        // Strip surrounding quotes
+        String unquoted = quoted.substring(1, quoted.length() - 1);
+        // Create text node in our output document
+        Text textNode = outputDoc.createTextNode(unquoted);
+        return Collections.singletonList(textNode);
     }
 
-    // xquery: absolutePath  # XQueryAbsolutePath
+    /**
+     * xquery: absolutePath  # XQueryAbsolutePath
+     *
+     * Here, the "absolutePath" sub-tree actually belongs to the XPath grammar,
+     * specifically:  XPathParser.AbsolutePathContext
+     */
     @Override
     public List<Node> visitXQueryAbsolutePath(XQueryParser.XQueryAbsolutePathContext ctx) {
-        // Debug the input
-        System.out.println("Raw absolute path: " + ctx.getText());
-        System.out.println("Absolute path context type: " + ctx.absolutePath().getClass().getName());
-        
-        // Instead of reparsing, use the existing parse tree
-        if (ctx.absolutePath() instanceof XQueryParser.AbsoluteSlashContext) {
-            XQueryParser.AbsoluteSlashContext slashCtx = (XQueryParser.AbsoluteSlashContext) ctx.absolutePath();
-            String fileName = slashCtx.fileName().getText().replace("\"", "");
-            System.out.println("Filename: " + fileName);
-            
-            Document doc = XMLParser.parse(fileName);
-            Node root = doc.getDocumentElement();
-            xpath.setCurrentContext(Collections.singletonList(root));
-            
-            // Debug the relative path
-            System.out.println("Relative path: " + slashCtx.relativePath().getText());
-            return xpath.visit(slashCtx.relativePath());
-        }
-        
-        return new ArrayList<>();
+        // 1) Extract the text from the sub-tree, e.g. "doc(\"file.xml\")/PLAY"
+        String pathText = ctx.getText();
+
+        // 2) Parse that text using your XPath grammar
+        XPathLexer lexer = new XPathLexer(CharStreams.fromString(pathText));
+        XPathParser parser = new XPathParser(new CommonTokenStream(lexer));
+        XPathParser.XpathContext xpathTree = parser.xpath();
+
+        // 3) Evaluate it with your XPathEvaluator
+        return xpath.visit(xpathTree);
     }
 
-    // xquery: '(' xquery ')'  # XQueryParentheses
+
+    /**
+     * xquery: '(' xquery ')'  # XQueryParentheses
+     */
     @Override
     public List<Node> visitXQueryParentheses(XQueryParser.XQueryParenthesesContext ctx) {
-        List<Node> result = visit(ctx.xquery());
-        return result != null ? result : new ArrayList<>();
+        List<Node> inside = visit(ctx.xquery());
+        return (inside != null) ? inside : new ArrayList<>();
     }
 
-    // xquery: xquery ',' xquery  # XQueryConcat
+    /**
+     * xquery: xquery ',' xquery  # XQueryConcat
+     */
     @Override
     public List<Node> visitXQueryConcat(XQueryParser.XQueryConcatContext ctx) {
         List<Node> left = visit(ctx.xquery(0));
@@ -96,43 +107,55 @@ public class XQueryEvaluator extends XQueryBaseVisitor<List<Node>> {
         return result;
     }
 
-    // xquery: xquery '/' relativePath  # XQueryPath
+    /**
+     * xquery: xquery '/' relativePath  # XQueryPath
+     */
     @Override
     public List<Node> visitXQueryPath(XQueryParser.XQueryPathContext ctx) {
+        // Evaluate the left XQuery part
         List<Node> contextNodes = visit(ctx.xquery());
-        if (contextNodes == null || contextNodes.isEmpty()) {
-            return new ArrayList<>();
-        }
-        
+        if (contextNodes == null) contextNodes = new ArrayList<>();
+        // Then apply the relative path using the XPath evaluator
         xpath.setCurrentContext(contextNodes);
         List<Node> result = xpath.visit(ctx.relativePath());
-        return result != null ? result : new ArrayList<>();
+        return (result != null) ? result : new ArrayList<>();
     }
 
-    // xquery: xquery '//' relativePath  # XQueryDoubleSlash
+    /**
+     * xquery: xquery '//' relativePath  # XQueryDoubleSlash
+     *
+     * Collect all descendants from the left, then evaluate the relative path.
+     */
     @Override
     public List<Node> visitXQueryDoubleSlash(XQueryParser.XQueryDoubleSlashContext ctx) {
-        List<Node> left = visit(ctx.xquery());
-        if (left == null) left = new ArrayList<>();
-        List<Node> allNodes = new ArrayList<>();
-        for (Node n : left) {
-            allNodes.add(n);
-            getDescendants(n, allNodes);
+        List<Node> leftNodes = visit(ctx.xquery());
+        if (leftNodes == null) leftNodes = new ArrayList<>();
+
+        // Gather leftNodes plus all descendants
+        List<Node> allDesc = new ArrayList<>(leftNodes);
+        for (Node n : leftNodes) {
+            getDescendants(n, allDesc);
         }
-        xpath.setCurrentContext(allNodes);
+
+        // Now evaluate the relative path from that expanded set
+        xpath.setCurrentContext(allDesc);
         List<Node> result = xpath.visit(ctx.relativePath());
-        return result != null ? result : new ArrayList<>();
+        return (result != null) ? result : new ArrayList<>();
     }
 
-    // xquery: '<' tagName '>' '{' xquery '}' '</' tagName '>'  # XQueryTag
+    /**
+     * xquery: '<' tagName '>' '{' xquery '}' '</' tagName '>'  # XQueryTag
+     */
     @Override
     public List<Node> visitXQueryTag(XQueryParser.XQueryTagContext ctx) {
-        String tagName = ctx.tagName(0).getText();
-        Element elem = outputDoc.createElement(tagName);
+        String tag = ctx.tagName(0).getText();  // e.g. "result"
+        Element elem = outputDoc.createElement(tag);
+
+        // Evaluate the sub-xquery inside { ... }
         List<Node> children = visit(ctx.xquery());
         if (children != null) {
             for (Node child : children) {
-                // Import node into our document so that it belongs to outputDoc.
+                // Import node into our document
                 Node imported = outputDoc.importNode(child, true);
                 elem.appendChild(imported);
             }
@@ -140,215 +163,291 @@ public class XQueryEvaluator extends XQueryBaseVisitor<List<Node>> {
         return Collections.singletonList(elem);
     }
 
-    // xquery: forClause letClause? whereClause? returnClause  # XQueryFLWR
+    /**
+     * xquery: forClause letClause? whereClause? returnClause  # XQueryFLWR
+     */
     @Override
     public List<Node> visitXQueryFLWR(XQueryParser.XQueryFLWRContext ctx) {
-        List<Map<String, List<Node>>> bindings = evaluateForClause(ctx.forClause());
-        List<Node> results = new ArrayList<>();
-        
-        // Save current environment
+        // Evaluate for-clause to produce a list of variable bindings
+        List<Map<String, List<Node>>> forBindings = evaluateForClause(ctx.forClause());
+        List<Node> finalResults = new ArrayList<>();
+
+        // Save the current (outer) environment
         Map<String, List<Node>> savedEnv = new HashMap<>(env.peek());
-        
+
         try {
-            for (Map<String, List<Node>> binding : bindings) {
-                // Create new scope with saved environment as parent
+            // For each binding from the for-clause
+            for (Map<String, List<Node>> binding : forBindings) {
+                // Create a new scope on top of saved environment
                 Map<String, List<Node>> newScope = new HashMap<>(savedEnv);
                 newScope.putAll(binding);
                 env.push(newScope);
-                
+
                 try {
+                    // If there's a let-clause, evaluate it
                     if (ctx.letClause() != null) {
                         Map<String, List<Node>> letBindings = evaluateLetClause(ctx.letClause());
                         env.peek().putAll(letBindings);
                     }
-                    
-                    boolean condition = true;
+
+                    // If there's a where-clause, check condition
+                    boolean pass = true;
                     if (ctx.whereClause() != null) {
-                        condition = evaluateCondition(ctx.whereClause().cond());
+                        pass = evaluateCondition(ctx.whereClause().cond());
                     }
-                    
-                    if (condition) {
+
+                    // If condition passes, evaluate the return-clause
+                    if (pass) {
                         List<Node> ret = visit(ctx.returnClause().xquery());
                         if (ret != null) {
-                            results.addAll(ret);
+                            finalResults.addAll(ret);
                         }
                     }
                 } finally {
+                    // Pop this iteration's scope
                     env.pop();
                 }
             }
-            return results;
         } finally {
-            // Restore original environment
+            // Restore the original env scope
             env.peek().clear();
             env.peek().putAll(savedEnv);
         }
+
+        return finalResults;
     }
 
-    // xquery: letClause xquery  # XQueryLet
+    /**
+     * xquery: letClause xquery  # XQueryLet
+     */
     @Override
     public List<Node> visitXQueryLet(XQueryParser.XQueryLetContext ctx) {
+        // Evaluate let-bindings
         Map<String, List<Node>> letBindings = evaluateLetClause(ctx.letClause());
+        // Create a new scope that includes those bindings
         Map<String, List<Node>> newScope = new HashMap<>(env.peek());
         newScope.putAll(letBindings);
+
         env.push(newScope);
-        List<Node> result = visit(ctx.xquery());
-        env.pop();
-        return result != null ? result : new ArrayList<>();
+        try {
+            // Then evaluate the following xquery
+            List<Node> result = visit(ctx.xquery());
+            return (result != null) ? result : new ArrayList<>();
+        } finally {
+            env.pop();
+        }
     }
 
-    // ------------------- Helpers for FLWR Clauses -------------------
+    // ---------------------------------------------------------
+    //   Helper Methods for FLWR
+    // ---------------------------------------------------------
 
     /**
-     * Evaluate a forClause, returning a list of variable bindings.
-     * Each binding is a map from variable name to a singleton list of a node.
+     * Evaluate a forClause, returning a list of variable-binding maps.
+     * Each map is { $varName -> single node } for one iteration.
      */
     private List<Map<String, List<Node>>> evaluateForClause(XQueryParser.ForClauseContext ctx) {
-        List<Map<String, List<Node>>> bindings = new ArrayList<>();
-        bindings.add(new HashMap<>()); // Start with an empty binding
-
-        int count = ctx.var().size();
-        for (int i = 0; i < count; i++) {
+        List<Map<String, List<Node>>> currentBindings = new ArrayList<>();
+        // Start with a single empty binding
+        currentBindings.add(new HashMap<>());
+    
+        // for each "var in xquery"
+        int nPairs = ctx.var().size(); // number of ($var in xquery) pairs
+        for (int i = 0; i < nPairs; i++) {
             String varName = ctx.var(i).getText();
-            List<Node> nodes = visit(ctx.xquery(i));
-            if (nodes == null) {
-                nodes = new ArrayList<>();
-            }
-            
             List<Map<String, List<Node>>> newBindings = new ArrayList<>();
-            for (Map<String, List<Node>> binding : bindings) {
+    
+            // For each partial binding so far
+            for (Map<String, List<Node>> binding : currentBindings) {
+    
+                // 1) Push this partial binding onto the env
+                Map<String, List<Node>> savedScope = new HashMap<>(env.peek());
+                // Make a new scope that merges the top scope with `binding`
+                Map<String, List<Node>> mergedScope = new HashMap<>(savedScope);
+                mergedScope.putAll(binding);
+                env.push(mergedScope);
+    
+                // 2) Evaluate the xquery that might reference earlier variables
+                List<Node> nodes = visit(ctx.xquery(i));
+                // System.out.println("DEBUG forClause: var=" + varName + ", got " + nodes.size() + " nodes from " + ctx.xquery(i).getText());
+                // 3) Pop the env back
+                env.pop();
+    
+                // For each node in that result, create an extended binding
                 for (Node n : nodes) {
-                    Map<String, List<Node>> newBinding = new HashMap<>(binding);
-                    newBinding.put(varName, Collections.singletonList(n));
-                    newBindings.add(newBinding);
+                    Map<String, List<Node>> extended = new HashMap<>(binding);
+                    extended.put(varName, Collections.singletonList(n));
+                    newBindings.add(extended);
                 }
             }
-            bindings = newBindings;
+    
+            currentBindings = newBindings;
         }
-        return bindings;
+    
+        return currentBindings;
     }
 
     /**
-     * Evaluate a letClause and return a map of variable bindings.
+     * Evaluate a letClause -> a map of { varName -> list of nodes }.
      */
     private Map<String, List<Node>> evaluateLetClause(XQueryParser.LetClauseContext ctx) {
         Map<String, List<Node>> bindings = new HashMap<>();
         int count = ctx.var().size();
         for (int i = 0; i < count; i++) {
             String varName = ctx.var(i).getText();
-            List<Node> nodes = visit(ctx.xquery(i));
-            if (nodes == null) nodes = new ArrayList<>();
-            bindings.put(varName, nodes);
+            List<Node> val = visit(ctx.xquery(i));
+            if (val == null) val = new ArrayList<>();
+            bindings.put(varName, val);
         }
         return bindings;
     }
 
-    // ------------------- Helpers for Conditions -------------------
+    // ---------------------------------------------------------
+    //   Helpers for whereClause conditions
+    // ---------------------------------------------------------
 
     /**
-     * Evaluate a condition expression and return a boolean.
+     * Evaluate any cond expression into a boolean.
      */
     private boolean evaluateCondition(XQueryParser.CondContext ctx) {
         if (ctx instanceof XQueryParser.XQueryValueEqualContext) {
-            List<Node> left = visit(((XQueryParser.XQueryValueEqualContext) ctx).xquery(0));
-            List<Node> right = visit(((XQueryParser.XQueryValueEqualContext) ctx).xquery(1));
+            // xquery ('=' | 'eq') xquery
+            XQueryParser.XQueryValueEqualContext c = (XQueryParser.XQueryValueEqualContext) ctx;
+            List<Node> left = visit(c.xquery(0));
+            List<Node> right = visit(c.xquery(1));
             if (left == null) left = new ArrayList<>();
             if (right == null) right = new ArrayList<>();
             return nodesValueEqual(left, right);
+
         } else if (ctx instanceof XQueryParser.XQueryIdentityEqualContext) {
-            List<Node> left = visit(((XQueryParser.XQueryIdentityEqualContext) ctx).xquery(0));
-            List<Node> right = visit(((XQueryParser.XQueryIdentityEqualContext) ctx).xquery(1));
+            // xquery ('==' | 'is') xquery
+            XQueryParser.XQueryIdentityEqualContext c = (XQueryParser.XQueryIdentityEqualContext) ctx;
+            List<Node> left = visit(c.xquery(0));
+            List<Node> right = visit(c.xquery(1));
             if (left == null) left = new ArrayList<>();
             if (right == null) right = new ArrayList<>();
             return nodesIdentityEqual(left, right);
+
         } else if (ctx instanceof XQueryParser.XQueryEmptyContext) {
-            List<Node> nodes = visit(((XQueryParser.XQueryEmptyContext) ctx).xquery());
-            return nodes == null || nodes.isEmpty();
+            // empty(xquery)
+            XQueryParser.XQueryEmptyContext c = (XQueryParser.XQueryEmptyContext) ctx;
+            List<Node> check = visit(c.xquery());
+            return (check == null || check.isEmpty());
+
         } else if (ctx instanceof XQueryParser.XQuerySomeContext) {
-            XQueryParser.XQuerySomeContext someCtx = (XQueryParser.XQuerySomeContext) ctx;
+            // some $v in XQ, ... satisfies cond
+            XQueryParser.XQuerySomeContext c = (XQueryParser.XQuerySomeContext) ctx;
             List<Map<String, List<Node>>> bindings = new ArrayList<>();
             bindings.add(new HashMap<>());
-            int count = someCtx.var().size();
-            for (int i = 0; i < count; i++) {
-                String varName = someCtx.var(i).getText();
-                List<Node> nodes = visit(someCtx.xquery(i));
-                if (nodes == null) nodes = new ArrayList<>();
+
+            // Build up all possible bindings from 'some' variables
+            int nVars = c.var().size();
+            for (int i = 0; i < nVars; i++) {
+                String vName = c.var(i).getText();
+                List<Node> possibleVals = visit(c.xquery(i));
+                if (possibleVals == null) possibleVals = new ArrayList<>();
+
                 List<Map<String, List<Node>>> newBindings = new ArrayList<>();
-                for (Map<String, List<Node>> binding : bindings) {
-                    for (Node n : nodes) {
-                        Map<String, List<Node>> newBinding = new HashMap<>(binding);
-                        newBinding.put(varName, Collections.singletonList(n));
-                        newBindings.add(newBinding);
+                for (Map<String, List<Node>> b : bindings) {
+                    for (Node val : possibleVals) {
+                        Map<String, List<Node>> extended = new HashMap<>(b);
+                        extended.put(vName, Collections.singletonList(val));
+                        newBindings.add(extended);
                     }
                 }
                 bindings = newBindings;
             }
-            // Satisfied if at least one binding makes the condition true.
-            for (Map<String, List<Node>> binding : bindings) {
-                Map<String, List<Node>> newScope = new HashMap<>(env.peek());
-                newScope.putAll(binding);
+            // Condition is satisfied if at least one binding yields true
+            for (Map<String, List<Node>> b : bindings) {
+                // Temporarily push a new scope with these bindings
+                Map<String, List<Node>> saved = new HashMap<>(env.peek());
+                Map<String, List<Node>> newScope = new HashMap<>(saved);
+                newScope.putAll(b);
                 env.push(newScope);
-                boolean sat = evaluateCondition(someCtx.cond());
-                env.pop();
-                if (sat) return true;
+                try {
+                    boolean sat = evaluateCondition(c.cond());
+                    if (sat) {
+                        return true;
+                    }
+                } finally {
+                    env.pop();
+                }
             }
             return false;
+
         } else if (ctx instanceof XQueryParser.XQueryCondParenthesesContext) {
+            // (cond)
             return evaluateCondition(((XQueryParser.XQueryCondParenthesesContext) ctx).cond());
+
         } else if (ctx instanceof XQueryParser.XQueryCondAndContext) {
-            XQueryParser.XQueryCondAndContext andCtx = (XQueryParser.XQueryCondAndContext) ctx;
-            return evaluateCondition(andCtx.cond(0)) && evaluateCondition(andCtx.cond(1));
+            // cond AND cond
+            XQueryParser.XQueryCondAndContext c = (XQueryParser.XQueryCondAndContext) ctx;
+            return evaluateCondition(c.cond(0)) && evaluateCondition(c.cond(1));
+
         } else if (ctx instanceof XQueryParser.XQueryCondOrContext) {
-            XQueryParser.XQueryCondOrContext orCtx = (XQueryParser.XQueryCondOrContext) ctx;
-            return evaluateCondition(orCtx.cond(0)) || evaluateCondition(orCtx.cond(1));
+            // cond OR cond
+            XQueryParser.XQueryCondOrContext c = (XQueryParser.XQueryCondOrContext) ctx;
+            return evaluateCondition(c.cond(0)) || evaluateCondition(c.cond(1));
+
         } else if (ctx instanceof XQueryParser.XQueryCondNotContext) {
-            return !evaluateCondition(((XQueryParser.XQueryCondNotContext) ctx).cond());
+            // not cond
+            XQueryParser.XQueryCondNotContext c = (XQueryParser.XQueryCondNotContext) ctx;
+            return !evaluateCondition(c.cond());
+        }
+
+        // Default fallback
+        return false;
+    }
+
+    /**
+     * Value equality: check if each corresponding node's textContent matches.
+     * (Very simplified notion of 'value equal')
+     */
+    private boolean nodesValueEqual(List<Node> left, List<Node> right) {
+        // A common approach is: "some l in left, some r in right, l.textContent == r.textContent"
+        // or you might want to compare them pairwise.  Adapt as needed.
+        for (Node ln : left) {
+            for (Node rn : right) {
+                if (ln.getTextContent().equals(rn.getTextContent())) {
+                    return true;
+                }
+            }
         }
         return false;
     }
 
     /**
-     * Compare two lists of nodes for value equality.
-     */
-    private boolean nodesValueEqual(List<Node> left, List<Node> right) {
-        if (left.size() != right.size()) return false;
-        for (int i = 0; i < left.size(); i++) {
-            if (!left.get(i).getTextContent().equals(right.get(i).getTextContent()))
-                return false;
-        }
-        return true;
-    }
-
-    /**
-     * Compare two lists of nodes for identity (reference equality).
+     * Identity equality: check if there is a pair of nodes that are the same DOM node.
      */
     private boolean nodesIdentityEqual(List<Node> left, List<Node> right) {
-        if (left.size() != right.size()) return false;
-        for (int i = 0; i < left.size(); i++) {
-            if (left.get(i) != right.get(i))
-                return false;
+        for (Node ln : left) {
+            for (Node rn : right) {
+                // isSameNode() is a DOM method
+                if (ln.isSameNode(rn)) {
+                    return true;
+                }
+            }
         }
-        return true;
+        return false;
     }
 
-    // ------------------- Utility -------------------
-
-    /**
-     * Recursively collect all descendants of a node.
-     */
-    private void getDescendants(Node node, List<Node> list) {
+    // ---------------------------------------------------------
+    //    Utility to get descendants
+    // ---------------------------------------------------------
+    private void getDescendants(Node node, List<Node> result) {
         Node child = node.getFirstChild();
         while (child != null) {
             if (child.getNodeType() == Node.ELEMENT_NODE) {
-                list.add(child);
-                getDescendants(child, list);
+                result.add(child);
+                getDescendants(child, result);
             }
             child = child.getNextSibling();
         }
     }
 
-    // ------------------- Override Default Visitor Behavior -------------------
-
+    // ---------------------------------------------------------
+    //    Default visitor aggregator overrides
+    // ---------------------------------------------------------
     @Override
     protected List<Node> defaultResult() {
         return new ArrayList<>();
@@ -356,11 +455,12 @@ public class XQueryEvaluator extends XQueryBaseVisitor<List<Node>> {
 
     @Override
     protected List<Node> aggregateResult(List<Node> aggregate, List<Node> nextResult) {
-        if (aggregate == null)
+        if (aggregate == null) {
             aggregate = new ArrayList<>();
-        if (nextResult != null)
+        }
+        if (nextResult != null) {
             aggregate.addAll(nextResult);
+        }
         return aggregate;
     }
-
 }

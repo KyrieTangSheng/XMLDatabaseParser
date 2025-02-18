@@ -52,8 +52,25 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
     public LinkedList<Node> visitAbsoluteDoubleSlash(XPathParser.AbsoluteDoubleSlashContext ctx) {
         String fileName = ctx.fileName().getText().replace("\"", "");
         Document doc = XMLParser.parse(fileName);
+
+        // /** for debugging */
+        // if (doc == null) {
+        //     System.out.println("DEBUG: doc is null!");
+        // } else if (doc.getDocumentElement() == null) {
+        //     System.out.println("DEBUG: root element is null!");
+        // } else {
+        //     System.out.println("DEBUG: root element = " + doc.getDocumentElement().getNodeName());
+        // }
+        // /** end of debugging */
+
         Node root = doc.getDocumentElement();
 
+        // /** for debugging */
+        // System.out.println("DEBUG: root element = " + root.getNodeName());
+        // NodeList acts = doc.getElementsByTagName("ACT");
+        // System.out.println("DEBUG: found " + acts.getLength() + " <ACT> elements in " + fileName);
+        // /** end of debugging */
+       
         this.currentContext.clear();
         this.currentContext.add(root);
         this.currentContext.addAll(getDescendants(root));
