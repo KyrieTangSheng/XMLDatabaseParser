@@ -5,108 +5,108 @@ Query:
 Result:
 <result>
   <speaks>
-    <who></who>
+    <who>FLAVIUS</who>
     <when>ACT I</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>First Commoner</who>
     <when>ACT I</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MARULLUS</who>
     <when>ACT I</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Commoner</who>
     <when>ACT I</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MARULLUS</who>
     <when>ACT I</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Commoner</who>
     <when>ACT I</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MARULLUS</who>
     <when>ACT I</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Commoner</who>
     <when>ACT I</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MARULLUS</who>
     <when>ACT I</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Commoner</who>
     <when>ACT I</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>FLAVIUS</who>
     <when>ACT I</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Commoner</who>
     <when>ACT I</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>FLAVIUS</who>
     <when>ACT I</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Commoner</who>
     <when>ACT I</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MARULLUS</who>
     <when>ACT I</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>FLAVIUS</who>
     <when>ACT I</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MARULLUS</who>
     <when>ACT I</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>FLAVIUS</who>
     <when>ACT I</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CALPURNIA</who>
     <when>ACT I</when>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -114,13 +114,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -128,49 +128,49 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Soothsayer</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Soothsayer</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -178,13 +178,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -192,25 +192,25 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Soothsayer</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -218,7 +218,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -226,7 +226,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -234,7 +234,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -242,7 +242,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -250,7 +250,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -258,7 +258,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -266,7 +266,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -274,7 +274,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -282,7 +282,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -290,7 +290,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -298,7 +298,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -306,7 +306,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -314,7 +314,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -322,7 +322,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -330,7 +330,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -338,7 +338,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -346,7 +346,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -354,7 +354,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -362,7 +362,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -370,7 +370,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -378,7 +378,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -386,7 +386,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -394,13 +394,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -408,13 +408,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -422,19 +422,19 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -442,13 +442,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -456,13 +456,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -470,13 +470,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -484,13 +484,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -498,13 +498,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -512,13 +512,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -526,13 +526,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -540,13 +540,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -554,7 +554,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -562,13 +562,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -576,13 +576,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -590,13 +590,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -604,13 +604,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -618,13 +618,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -632,13 +632,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -646,13 +646,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -660,13 +660,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -674,7 +674,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -682,7 +682,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -690,7 +690,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -698,47 +698,47 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CICERO</who>
     <when>ACT I</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CICERO</who>
     <when>ACT I</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CICERO</who>
     <when>ACT I</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CICERO</who>
     <when>ACT I</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -746,13 +746,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -760,13 +760,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -774,13 +774,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -788,13 +788,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -802,13 +802,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -816,13 +816,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -830,13 +830,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -844,13 +844,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -858,13 +858,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -872,13 +872,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CINNA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -886,13 +886,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CINNA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -900,13 +900,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CINNA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -914,13 +914,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CINNA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -928,13 +928,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -942,7 +942,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -950,12 +950,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCIUS</who>
     <when>ACT II</when>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -963,12 +963,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCIUS</who>
     <when>ACT II</when>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -976,12 +976,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCIUS</who>
     <when>ACT II</when>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -989,12 +989,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCIUS</who>
     <when>ACT II</when>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1002,12 +1002,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCIUS</who>
     <when>ACT II</when>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1015,12 +1015,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCIUS</who>
     <when>ACT II</when>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1028,12 +1028,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCIUS</who>
     <when>ACT II</when>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1041,12 +1041,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCIUS</who>
     <when>ACT II</when>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1054,12 +1054,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCIUS</who>
     <when>ACT II</when>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1067,7 +1067,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1075,7 +1075,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1083,7 +1083,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1091,7 +1091,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1099,7 +1099,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1107,7 +1107,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1115,7 +1115,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1123,7 +1123,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1131,7 +1131,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1139,30 +1139,30 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>DECIUS BRUTUS</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CINNA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1170,7 +1170,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1178,7 +1178,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1186,7 +1186,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1194,24 +1194,24 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CINNA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>METELLUS CIMBER</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1219,7 +1219,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1227,18 +1227,18 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>DECIUS BRUTUS</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1246,7 +1246,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1254,7 +1254,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1262,7 +1262,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1270,12 +1270,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>TREBONIUS</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1283,7 +1283,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1291,12 +1291,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>TREBONIUS</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1304,12 +1304,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>DECIUS BRUTUS</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1317,7 +1317,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1325,18 +1325,18 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CINNA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>METELLUS CIMBER</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1344,7 +1344,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1352,7 +1352,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1360,11 +1360,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>PORTIA</who>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1372,11 +1372,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>PORTIA</who>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1384,11 +1384,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>PORTIA</who>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1396,11 +1396,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>PORTIA</who>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1408,11 +1408,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>PORTIA</who>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1420,11 +1420,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>PORTIA</who>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1432,12 +1432,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCIUS</who>
     <when>ACT II</when>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1445,11 +1445,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LIGARIUS</who>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1457,11 +1457,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LIGARIUS</who>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1469,11 +1469,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LIGARIUS</who>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1481,11 +1481,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LIGARIUS</who>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1493,11 +1493,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LIGARIUS</who>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1505,150 +1505,150 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Servant</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Servant</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CALPURNIA</who>
     <when>ACT I</when>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CALPURNIA</who>
     <when>ACT I</when>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CALPURNIA</who>
     <when>ACT I</when>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Servant</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CALPURNIA</who>
     <when>ACT I</when>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>DECIUS BRUTUS</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CALPURNIA</who>
     <when>ACT I</when>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>DECIUS BRUTUS</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>DECIUS BRUTUS</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>DECIUS BRUTUS</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>PUBLIUS</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1656,13 +1656,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1670,24 +1670,24 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>TREBONIUS</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1695,151 +1695,151 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ARTEMIDORUS</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>PORTIA</who>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCIUS</who>
     <when>ACT II</when>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>PORTIA</who>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCIUS</who>
     <when>ACT II</when>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>PORTIA</who>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCIUS</who>
     <when>ACT II</when>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>PORTIA</who>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCIUS</who>
     <when>ACT II</when>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>PORTIA</who>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Soothsayer</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>PORTIA</who>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Soothsayer</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>PORTIA</who>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Soothsayer</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>PORTIA</who>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Soothsayer</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>PORTIA</who>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Soothsayer</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>PORTIA</who>
     <when>ACT II</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Soothsayer</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ARTEMIDORUS</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>DECIUS BRUTUS</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ARTEMIDORUS</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ARTEMIDORUS</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>PUBLIUS</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1847,11 +1847,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>POPILIUS</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1859,11 +1859,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>POPILIUS</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1871,7 +1871,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1879,7 +1879,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1887,7 +1887,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1895,7 +1895,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1903,7 +1903,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1911,12 +1911,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>DECIUS BRUTUS</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1924,35 +1924,35 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CINNA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>METELLUS CIMBER</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>METELLUS CIMBER</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1960,13 +1960,13 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1974,7 +1974,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -1982,48 +1982,48 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CINNA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>DECIUS BRUTUS</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CAESAR</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CINNA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2031,7 +2031,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2039,18 +2039,18 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASCA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>DECIUS BRUTUS</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2058,18 +2058,18 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CINNA</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>METELLUS CIMBER</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2077,7 +2077,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2085,7 +2085,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2093,7 +2093,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2101,12 +2101,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>TREBONIUS</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2114,7 +2114,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2122,7 +2122,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2130,7 +2130,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2138,7 +2138,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2146,7 +2146,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2154,12 +2154,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>DECIUS BRUTUS</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2167,7 +2167,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2175,12 +2175,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Servant</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2188,12 +2188,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Servant</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2201,7 +2201,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2209,7 +2209,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2217,7 +2217,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2225,7 +2225,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2233,7 +2233,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2241,7 +2241,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2249,7 +2249,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2257,7 +2257,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2265,7 +2265,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2273,7 +2273,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2281,7 +2281,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2289,7 +2289,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2297,7 +2297,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2305,7 +2305,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2313,7 +2313,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2321,7 +2321,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2329,7 +2329,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2337,7 +2337,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2345,7 +2345,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2353,7 +2353,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2361,7 +2361,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2369,12 +2369,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Servant</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2382,12 +2382,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Servant</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2395,12 +2395,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Servant</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2408,11 +2408,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Citizens</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2420,19 +2420,19 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>First Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Third Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2440,11 +2440,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>All</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2452,31 +2452,31 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>All</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>First Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Third Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Fourth Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>First Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2484,15 +2484,15 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>First Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2500,15 +2500,15 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>First Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Third Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2516,31 +2516,31 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Fourth Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Third Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Fourth Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>First Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Third Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2548,11 +2548,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Citizens</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2560,39 +2560,39 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>First Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Third Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Fourth Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>First Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Third Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Fourth Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2600,15 +2600,15 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Fourth Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>All</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2616,11 +2616,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Fourth Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2628,19 +2628,19 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Fourth Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>All</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2648,31 +2648,31 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Several Citizens</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Third Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Fourth Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>First Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2680,11 +2680,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Several Citizens</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2692,35 +2692,35 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>First Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Third Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Fourth Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>First Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>All</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2728,15 +2728,15 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>First Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2744,19 +2744,19 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>All</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>First Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Third Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2764,11 +2764,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>All</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2776,11 +2776,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>All</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2788,15 +2788,15 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Third Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2804,11 +2804,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>All</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2816,23 +2816,23 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>First Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Third Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Fourth Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2840,12 +2840,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Servant</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2853,12 +2853,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Servant</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2866,12 +2866,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Servant</who>
     <when>ACT II</when>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2879,107 +2879,107 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CINNA THE POET</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>First Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Third Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Fourth Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>First Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Fourth Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Third Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CINNA THE POET</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CINNA THE POET</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>First Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CINNA THE POET</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Fourth Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CINNA THE POET</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Third Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CINNA THE POET</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>First Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CINNA THE POET</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Fourth Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CINNA THE POET</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Fourth Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Third Citizen</who>
     <when>ACT III</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -2987,25 +2987,25 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>OCTAVIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LEPIDUS</who>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>OCTAVIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LEPIDUS</who>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3013,16 +3013,16 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LEPIDUS</who>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>OCTAVIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3030,12 +3030,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>OCTAVIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3043,12 +3043,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>OCTAVIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3056,12 +3056,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>OCTAVIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3069,12 +3069,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCILIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3082,12 +3082,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCILIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3095,12 +3095,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>PINDARUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3108,12 +3108,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCILIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3121,12 +3121,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCILIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3134,7 +3134,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3142,7 +3142,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3150,21 +3150,21 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>First Soldier</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Soldier</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Third Soldier</who>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3172,7 +3172,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3180,7 +3180,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3188,7 +3188,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3196,7 +3196,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3204,7 +3204,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3212,7 +3212,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3220,7 +3220,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3228,7 +3228,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3236,7 +3236,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3244,7 +3244,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3252,7 +3252,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3260,7 +3260,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3268,7 +3268,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3276,7 +3276,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3284,7 +3284,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3292,7 +3292,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3300,7 +3300,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3308,7 +3308,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3316,7 +3316,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3324,7 +3324,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3332,7 +3332,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3340,7 +3340,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3348,7 +3348,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3356,7 +3356,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3364,7 +3364,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3372,7 +3372,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3380,7 +3380,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3388,7 +3388,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3396,7 +3396,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3404,7 +3404,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3412,7 +3412,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3420,7 +3420,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3428,7 +3428,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3436,7 +3436,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3444,7 +3444,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3452,7 +3452,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3460,7 +3460,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3468,7 +3468,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3476,7 +3476,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3484,7 +3484,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3492,7 +3492,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3500,7 +3500,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3508,7 +3508,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3516,7 +3516,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3524,7 +3524,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3532,7 +3532,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3540,7 +3540,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3548,7 +3548,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3556,7 +3556,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3564,7 +3564,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3572,7 +3572,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3580,7 +3580,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3588,7 +3588,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3596,20 +3596,20 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Poet</who>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCILIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Poet</who>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3617,11 +3617,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Poet</who>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3629,7 +3629,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3637,7 +3637,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3645,7 +3645,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3653,7 +3653,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3661,7 +3661,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3669,7 +3669,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3677,7 +3677,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3685,7 +3685,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3693,7 +3693,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3701,7 +3701,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3709,7 +3709,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3717,7 +3717,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3725,7 +3725,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3733,7 +3733,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3741,7 +3741,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3749,7 +3749,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3757,7 +3757,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3765,7 +3765,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3773,7 +3773,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3781,7 +3781,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3789,7 +3789,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3797,7 +3797,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3805,7 +3805,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3813,12 +3813,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MESSALA</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3826,12 +3826,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MESSALA</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3839,7 +3839,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3847,12 +3847,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MESSALA</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3860,12 +3860,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MESSALA</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3873,12 +3873,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MESSALA</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3886,12 +3886,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MESSALA</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3899,12 +3899,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MESSALA</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3912,12 +3912,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MESSALA</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3925,7 +3925,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3933,7 +3933,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3941,7 +3941,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3949,7 +3949,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3957,7 +3957,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3965,7 +3965,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3973,7 +3973,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3981,7 +3981,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3989,7 +3989,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -3997,7 +3997,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4005,7 +4005,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4013,7 +4013,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4021,7 +4021,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4029,7 +4029,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4037,7 +4037,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4045,17 +4045,17 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>TITINIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MESSALA</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4063,12 +4063,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCIUS</who>
     <when>ACT II</when>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4076,16 +4076,16 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCIUS</who>
     <when>ACT II</when>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>VARRO</who>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4093,11 +4093,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>VARRO</who>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4105,12 +4105,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCIUS</who>
     <when>ACT II</when>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4118,12 +4118,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCIUS</who>
     <when>ACT II</when>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4131,12 +4131,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCIUS</who>
     <when>ACT II</when>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4144,12 +4144,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCIUS</who>
     <when>ACT II</when>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4157,11 +4157,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>GHOST</who>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4169,11 +4169,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>GHOST</who>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4181,11 +4181,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>GHOST</who>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4193,12 +4193,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCIUS</who>
     <when>ACT II</when>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4206,12 +4206,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCIUS</who>
     <when>ACT II</when>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4219,12 +4219,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCIUS</who>
     <when>ACT II</when>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4232,12 +4232,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCIUS</who>
     <when>ACT II</when>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4245,15 +4245,15 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>VARRO</who>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CLAUDIUS</who>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4261,15 +4261,15 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>VARRO</who>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CLAUDIUS</who>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4277,15 +4277,15 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>VARRO</who>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CLAUDIUS</who>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4293,20 +4293,20 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>VARRO</who>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CLAUDIUS</who>
     <when>ACT IV</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>OCTAVIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4314,11 +4314,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Messenger</who>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4326,12 +4326,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>OCTAVIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4339,12 +4339,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>OCTAVIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4352,7 +4352,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4360,12 +4360,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>OCTAVIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4373,12 +4373,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>OCTAVIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4386,12 +4386,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>OCTAVIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4399,7 +4399,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4407,7 +4407,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4415,7 +4415,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4423,7 +4423,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4431,7 +4431,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4439,7 +4439,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4447,12 +4447,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>OCTAVIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4460,12 +4460,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>OCTAVIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4473,7 +4473,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4481,7 +4481,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4489,12 +4489,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>OCTAVIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4502,7 +4502,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4510,12 +4510,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCILIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4523,12 +4523,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MESSALA</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4536,12 +4536,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MESSALA</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4549,7 +4549,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4557,7 +4557,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4565,7 +4565,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4573,7 +4573,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4581,7 +4581,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4589,7 +4589,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4597,7 +4597,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4605,7 +4605,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4613,7 +4613,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4621,17 +4621,17 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>TITINIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>PINDARUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4639,12 +4639,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>TITINIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4652,12 +4652,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>TITINIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4665,12 +4665,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>PINDARUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4678,12 +4678,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>PINDARUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CASSIUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4691,72 +4691,72 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>PINDARUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MESSALA</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>TITINIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MESSALA</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>TITINIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MESSALA</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>TITINIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MESSALA</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>TITINIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MESSALA</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>TITINIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MESSALA</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>TITINIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4764,12 +4764,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MESSALA</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4777,11 +4777,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CATO</who>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4789,11 +4789,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CATO</who>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4801,7 +4801,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4809,11 +4809,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CATO</who>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4821,37 +4821,37 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCILIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>First Soldier</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCILIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>First Soldier</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>Second Soldier</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>First Soldier</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4859,12 +4859,12 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCILIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4872,7 +4872,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4880,11 +4880,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CLITUS</who>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4892,11 +4892,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CLITUS</who>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4904,11 +4904,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CLITUS</who>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4916,31 +4916,31 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>DARDANIUS</who>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CLITUS</who>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>DARDANIUS</who>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CLITUS</who>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>DARDANIUS</who>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CLITUS</who>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4948,11 +4948,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>VOLUMNIUS</who>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4960,11 +4960,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>VOLUMNIUS</who>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4972,15 +4972,15 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>VOLUMNIUS</who>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CLITUS</who>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -4988,11 +4988,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>CLITUS</who>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -5000,11 +5000,11 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>STRATO</who>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>BRUTUS</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -5012,54 +5012,54 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>OCTAVIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MESSALA</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>STRATO</who>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>LUCILIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>OCTAVIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>STRATO</who>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>OCTAVIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MESSALA</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>STRATO</who>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>MESSALA</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>ANTONY</who>
     <when>ACT I</when>
     <when>ACT II</when>
     <when>ACT III</when>
@@ -5067,7 +5067,7 @@ Result:
     <when>ACT V</when>
   </speaks>
   <speaks>
-    <who></who>
+    <who>OCTAVIUS</who>
     <when>ACT IV</when>
     <when>ACT V</when>
   </speaks>

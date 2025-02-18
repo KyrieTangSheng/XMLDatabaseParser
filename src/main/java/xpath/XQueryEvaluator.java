@@ -121,14 +121,25 @@ public class XQueryEvaluator extends XQueryBaseVisitor<List<Node>> {
         List<Node> result = new ArrayList<>();
         
         // Special handling for text() function
-        if (pathText.endsWith("/text()")) {
-            String tagName = pathText.substring(0, pathText.length() - 7); // remove "/text()"
+        if (pathText.equals("text()")) {
+            // Direct text() call on context nodes
+            for (Node node : contextNodes) {
+                NodeList children = node.getChildNodes();
+                for (int i = 0; i < children.getLength(); i++) {
+                    Node child = children.item(i);
+                    if (child.getNodeType() == Node.TEXT_NODE) {
+                        result.add(child);
+                    }
+                }
+            }
+        } else if (pathText.endsWith("/text()")) {
+            // text() call after a tag name
+            String tagName = pathText.substring(0, pathText.length() - 7);
             for (Node node : contextNodes) {
                 NodeList children = node.getChildNodes();
                 for (int i = 0; i < children.getLength(); i++) {
                     Node child = children.item(i);
                     if (child.getNodeName().equals(tagName)) {
-                        // For text(), add the text node children
                         NodeList textChildren = child.getChildNodes();
                         for (int j = 0; j < textChildren.getLength(); j++) {
                             Node textNode = textChildren.item(j);
