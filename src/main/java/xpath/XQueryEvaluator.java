@@ -44,7 +44,8 @@ public class XQueryEvaluator extends XQueryBaseVisitor<List<Node>> {
         // Look up in env stack (from top to bottom)
         for (Map<String, List<Node>> scope : env) {
             if (scope.containsKey(varName)) {
-                return scope.get(varName);
+                List<Node> nodes = scope.get(varName);
+                return nodes;
             }
         }
         throw new RuntimeException("Undefined variable: " + varName);
@@ -101,6 +102,7 @@ public class XQueryEvaluator extends XQueryBaseVisitor<List<Node>> {
     public List<Node> visitXQueryConcat(XQueryParser.XQueryConcatContext ctx) {
         List<Node> left = visit(ctx.xquery(0));
         List<Node> right = visit(ctx.xquery(1));
+        
         List<Node> result = new ArrayList<>();
         if (left != null) result.addAll(left);
         if (right != null) result.addAll(right);
@@ -112,13 +114,45 @@ public class XQueryEvaluator extends XQueryBaseVisitor<List<Node>> {
      */
     @Override
     public List<Node> visitXQueryPath(XQueryParser.XQueryPathContext ctx) {
-        // Evaluate the left XQuery part
         List<Node> contextNodes = visit(ctx.xquery());
         if (contextNodes == null) contextNodes = new ArrayList<>();
-        // Then apply the relative path using the XPath evaluator
-        xpath.setCurrentContext(contextNodes);
-        List<Node> result = xpath.visit(ctx.relativePath());
-        return (result != null) ? result : new ArrayList<>();
+        
+        String pathText = ctx.relativePath().getText();
+        List<Node> result = new ArrayList<>();
+        
+        // Special handling for text() function
+        if (pathText.endsWith("/text()")) {
+            String tagName = pathText.substring(0, pathText.length() - 7); // remove "/text()"
+            for (Node node : contextNodes) {
+                NodeList children = node.getChildNodes();
+                for (int i = 0; i < children.getLength(); i++) {
+                    Node child = children.item(i);
+                    if (child.getNodeName().equals(tagName)) {
+                        // For text(), add the text node children
+                        NodeList textChildren = child.getChildNodes();
+                        for (int j = 0; j < textChildren.getLength(); j++) {
+                            Node textNode = textChildren.item(j);
+                            if (textNode.getNodeType() == Node.TEXT_NODE) {
+                                result.add(textNode);
+                            }
+                        }
+                    }
+                }
+            }
+        } else {
+            // Normal tag name matching
+            for (Node node : contextNodes) {
+                NodeList children = node.getChildNodes();
+                for (int i = 0; i < children.getLength(); i++) {
+                    Node child = children.item(i);
+                    if (child.getNodeName().equals(pathText)) {
+                        result.add(child);
+                    }
+                }
+            }
+        }
+        
+        return result;
     }
 
     /**
@@ -130,17 +164,28 @@ public class XQueryEvaluator extends XQueryBaseVisitor<List<Node>> {
     public List<Node> visitXQueryDoubleSlash(XQueryParser.XQueryDoubleSlashContext ctx) {
         List<Node> leftNodes = visit(ctx.xquery());
         if (leftNodes == null) leftNodes = new ArrayList<>();
+        
 
         // Gather leftNodes plus all descendants
-        List<Node> allDesc = new ArrayList<>(leftNodes);
+        List<Node> allDesc = new ArrayList<>();
         for (Node n : leftNodes) {
+            allDesc.add(n);  // Add the node itself
             getDescendants(n, allDesc);
         }
 
         // Now evaluate the relative path from that expanded set
         xpath.setCurrentContext(allDesc);
         List<Node> result = xpath.visit(ctx.relativePath());
-        return (result != null) ? result : new ArrayList<>();
+        
+        // Filter for nodes that match the relative path name
+        List<Node> filtered = new ArrayList<>();
+        String targetName = ctx.relativePath().getText();
+        for (Node n : allDesc) {
+            if (n.getNodeName().equals(targetName)) {
+                filtered.add(n);
+            }
+        }
+        return filtered;
     }
 
     /**
@@ -148,19 +193,27 @@ public class XQueryEvaluator extends XQueryBaseVisitor<List<Node>> {
      */
     @Override
     public List<Node> visitXQueryTag(XQueryParser.XQueryTagContext ctx) {
-        String tag = ctx.tagName(0).getText();  // e.g. "result"
-        Element elem = outputDoc.createElement(tag);
-
-        // Evaluate the sub-xquery inside { ... }
-        List<Node> children = visit(ctx.xquery());
-        if (children != null) {
-            for (Node child : children) {
-                // Import node into our document
-                Node imported = outputDoc.importNode(child, true);
-                elem.appendChild(imported);
+        String tagName = ctx.tagName(0).getText();
+        
+        Element newElement = outputDoc.createElement(tagName);
+        List<Node> contentNodes = visit(ctx.xquery());
+        
+        if (contentNodes != null) {
+            for (Node contentNode : contentNodes) {
+                Node importedNode = contentNode;
+                if (contentNode.getOwnerDocument() != outputDoc) {
+                    importedNode = outputDoc.importNode(contentNode, true);
+                }
+                // Preserve element structure
+                if (contentNode.getNodeType() == Node.ELEMENT_NODE) {
+                    newElement.appendChild(importedNode);
+                } else {
+                    newElement.appendChild(importedNode);
+                }
             }
         }
-        return Collections.singletonList(elem);
+        
+        return Collections.singletonList(newElement);
     }
 
     /**
@@ -248,42 +301,33 @@ public class XQueryEvaluator extends XQueryBaseVisitor<List<Node>> {
      */
     private List<Map<String, List<Node>>> evaluateForClause(XQueryParser.ForClauseContext ctx) {
         List<Map<String, List<Node>>> currentBindings = new ArrayList<>();
-        // Start with a single empty binding
         currentBindings.add(new HashMap<>());
-    
-        // for each "var in xquery"
-        int nPairs = ctx.var().size(); // number of ($var in xquery) pairs
+
+        int nPairs = ctx.var().size();
+        
         for (int i = 0; i < nPairs; i++) {
             String varName = ctx.var(i).getText();
+            
             List<Map<String, List<Node>>> newBindings = new ArrayList<>();
-    
-            // For each partial binding so far
             for (Map<String, List<Node>> binding : currentBindings) {
-    
-                // 1) Push this partial binding onto the env
                 Map<String, List<Node>> savedScope = new HashMap<>(env.peek());
-                // Make a new scope that merges the top scope with `binding`
                 Map<String, List<Node>> mergedScope = new HashMap<>(savedScope);
                 mergedScope.putAll(binding);
                 env.push(mergedScope);
-    
-                // 2) Evaluate the xquery that might reference earlier variables
+
                 List<Node> nodes = visit(ctx.xquery(i));
-                // System.out.println("DEBUG forClause: var=" + varName + ", got " + nodes.size() + " nodes from " + ctx.xquery(i).getText());
-                // 3) Pop the env back
+                
                 env.pop();
-    
-                // For each node in that result, create an extended binding
+
                 for (Node n : nodes) {
                     Map<String, List<Node>> extended = new HashMap<>(binding);
                     extended.put(varName, Collections.singletonList(n));
                     newBindings.add(extended);
                 }
             }
-    
             currentBindings = newBindings;
         }
-    
+        
         return currentBindings;
     }
 
@@ -435,13 +479,13 @@ public class XQueryEvaluator extends XQueryBaseVisitor<List<Node>> {
     //    Utility to get descendants
     // ---------------------------------------------------------
     private void getDescendants(Node node, List<Node> result) {
-        Node child = node.getFirstChild();
-        while (child != null) {
+        NodeList children = node.getChildNodes();
+        for (int i = 0; i < children.getLength(); i++) {
+            Node child = children.item(i);
             if (child.getNodeType() == Node.ELEMENT_NODE) {
                 result.add(child);
                 getDescendants(child, result);
             }
-            child = child.getNextSibling();
         }
     }
 

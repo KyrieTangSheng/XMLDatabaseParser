@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.List;
+import org.w3c.dom.NodeList;
 
 public class XQueryDemoQueries {
     private static XQueryEvaluator evaluator;
@@ -16,22 +17,40 @@ public class XQueryDemoQueries {
     private static String formatNode(Node node) {
         StringBuilder sb = new StringBuilder();
         String nodeName = node.getNodeName();
-        String content = node.getTextContent().trim();
         
-        // Handle text nodes differently
+        // Handle text nodes
         if (nodeName.equals("#text")) {
+            String content = node.getTextContent().trim();
             if (!content.isEmpty()) {
-                sb.append(content).append("\n");
+                sb.append(content);
             }
             return sb.toString();
         }
         
-        // Format as XML with proper indentation
+        // Start element
         sb.append("<").append(nodeName).append(">");
-        if (!content.isEmpty()) {
-            sb.append("\n  ").append(content.replace("\n", "\n  "));
+        
+        // Process children
+        NodeList children = node.getChildNodes();
+        boolean hasNonTextChildren = false;
+        
+        for (int i = 0; i < children.getLength(); i++) {
+            Node child = children.item(i);
+            if (child.getNodeType() == Node.ELEMENT_NODE) {
+                sb.append("\n  ").append(formatNode(child).replace("\n", "\n  "));
+                hasNonTextChildren = true;
+            } else if (child.getNodeType() == Node.TEXT_NODE) {
+                String text = child.getTextContent().trim();
+                if (!text.isEmpty()) {
+                    if (hasNonTextChildren) sb.append("\n  ");
+                    sb.append(text);
+                }
+            }
         }
-        sb.append("\n</").append(nodeName).append(">\n");
+        
+        // Close element
+        if (hasNonTextChildren) sb.append("\n");
+        sb.append("</").append(nodeName).append(">");
         
         return sb.toString();
     }
@@ -87,7 +106,7 @@ public class XQueryDemoQueries {
                 "for $a in document(\"" + TEST_XML + "\")//ACT," +
                 "    $sc in $a//SCENE," +
                 "    $sp in $sc/SPEECH " +
-                // "where $sp/LINE/text() = \"Et tu, Brute! Then fall, Caesar.\" " +
+                "where $sp/LINE/text() = \"Et tu, Brute! Then fall, Caesar.\" " +
                 "return <who>{$sp/SPEAKER/text()}</who>," +
                 "       <when>{" +
                 "           <act>{$a/TITLE/text()}</act>," +

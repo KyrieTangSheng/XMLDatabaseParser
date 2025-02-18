@@ -85,6 +85,7 @@ public class XPathEvaluator extends XPathBaseVisitor<LinkedList<Node>> {
         String tagName = ctx.tagName().getText();
         LinkedList<Node> result = new LinkedList<>();
         
+        
         for (Node node : currentContext) {
             if (node.getNodeName().equals(tagName)) {
                 result.add(node);
